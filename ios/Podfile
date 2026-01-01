@@ -1,0 +1,158 @@
+# Resolve react_native_pods.rb with node to allow for hoisting
+require Pod::Executable.execute_command('node', ['-p',
+  'require.resolve(
+    "react-native/scripts/react_native_pods.rb",
+    {paths: [process.argv[1]]},
+  )', __dir__]).strip
+require 'fileutils'
+
+platform :ios, '15.1'
+use_modular_headers!
+prepare_react_native_project!
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+  $RNFirebaseAsStaticFramework = true
+else
+  # Ensure FirebaseAuth builds as a framework so Swift headers are generated.
+  use_frameworks! :linkage => :static
+  $RNFirebaseAsStaticFramework = true
+end
+
+post_integrate do |installer|
+  # Ensure the relocated jsitooling modulemap is present after integration.
+  sandbox_root = installer.sandbox.root.to_s
+  jsitooling_dir = File.join(sandbox_root, 'Headers', 'Public', 'react_jsitooling')
+  FileUtils.mkdir_p(jsitooling_dir)
+  jsitooling_umbrella_src = File.join(sandbox_root, 'Target Support Files', 'React-jsitooling', 'React-jsitooling-umbrella.h')
+  jsitooling_modulemap_src = File.join(sandbox_root, 'Target Support Files', 'React-jsitooling', 'React-jsitooling.modulemap')
+  if File.exist?(jsitooling_umbrella_src)
+    FileUtils.cp(jsitooling_umbrella_src, File.join(jsitooling_dir, 'React-jsitooling-umbrella.h'))
+  end
+  if File.exist?(jsitooling_modulemap_src)
+    contents = File.read(jsitooling_modulemap_src)
+    updated = contents.gsub('module react_runtime', 'module react_jsitooling')
+    File.write(File.join(jsitooling_dir, 'React-jsitooling.modulemap'), updated)
+  end
+end
+
+target 'w3cart' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  post_install do |installer|
+    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+
+    # Workaround for missing gRPC-Core modulemap when using modular headers.
+    grpc_modulemap = File.join(installer.sandbox.root, 'Target Support Files', 'gRPC-Core', 'gRPC-Core.modulemap')
+    grpc_modulemap_dir = File.join(installer.sandbox.root, 'Headers', 'Private', 'grpc')
+    if File.exist?(grpc_modulemap)
+      FileUtils.mkdir_p(grpc_modulemap_dir)
+      grpc_target = File.join(grpc_modulemap_dir, 'gRPC-Core.modulemap')
+      unless File.exist?(grpc_target) && File.identical?(grpc_modulemap, grpc_target)
+        FileUtils.cp(grpc_modulemap, grpc_target)
+      end
+    end
+
+    xcconfig_dir = File.join(installer.sandbox.root, 'Target Support Files')
+    Dir.glob(File.join(xcconfig_dir, '**', '*.xcconfig')).each do |path|
+      contents = File.read(path)
+      updated = contents.gsub(
+        '${PODS_ROOT}/Headers/Private/grpc/gRPC-Core.modulemap',
+        '${PODS_ROOT}/Target Support Files/gRPC-Core/gRPC-Core.modulemap'
+      )
+      File.write(path, updated) if contents != updated
+    end
+
+    # Avoid missing Swift compatibility header imports for FirebaseAuth when
+    # using modular headers/static libs.
+    firebase_header = File.join(installer.sandbox.root, 'Headers', 'Private', 'Firebase', 'Firebase.h')
+    if File.exist?(firebase_header)
+      begin
+        target_path = File.symlink?(firebase_header) ? File.realpath(firebase_header) : firebase_header
+        FileUtils.chmod('u+w', target_path) unless File.writable?(target_path)
+      rescue StandardError
+        # If the header is not writable (symlink target perms), skip the edit.
+      end
+      target_path = File.symlink?(firebase_header) ? File.realpath(firebase_header) : firebase_header
+      if File.writable?(target_path)
+        contents = File.read(target_path)
+        updated = contents.gsub(
+          '#import <FirebaseAuth/FirebaseAuth-Swift.h>',
+          "#if __has_include(<FirebaseAuth/FirebaseAuth-Swift.h>)\n#import <FirebaseAuth/FirebaseAuth-Swift.h>\n#endif"
+        )
+        File.write(target_path, updated) if contents != updated
+      end
+    end
+
+    # Fix duplicate module name "react_runtime" from React-jsitooling and React-RuntimeCore.
+    # Move jsitooling modulemap to its own header dir and point Hermes to it.
+    sandbox_root = installer.sandbox.root.to_s
+    jsitooling_dir = File.join(sandbox_root, 'Headers', 'Public', 'react_jsitooling')
+    FileUtils.mkdir_p(jsitooling_dir)
+    jsitooling_umbrella_src = File.join(sandbox_root, 'Target Support Files', 'React-jsitooling', 'React-jsitooling-umbrella.h')
+    jsitooling_modulemap_src = File.join(sandbox_root, 'Target Support Files', 'React-jsitooling', 'React-jsitooling.modulemap')
+    jsitooling_modulemap_dst = File.join(jsitooling_dir, 'React-jsitooling.modulemap')
+    jsitooling_old_modulemap = File.join(sandbox_root, 'Headers', 'Public', 'react_runtime', 'React-jsitooling.modulemap')
+    jsitooling_old_umbrella = File.join(sandbox_root, 'Headers', 'Public', 'react_runtime', 'React-jsitooling-umbrella.h')
+
+    FileUtils.rm_f(jsitooling_old_modulemap)
+    FileUtils.rm_f(jsitooling_old_umbrella)
+
+    if File.exist?(jsitooling_umbrella_src)
+      FileUtils.cp(jsitooling_umbrella_src, File.join(jsitooling_dir, 'React-jsitooling-umbrella.h'))
+    end
+    if File.exist?(jsitooling_modulemap_src)
+      contents = File.read(jsitooling_modulemap_src)
+      updated = contents.gsub('module react_runtime', 'module react_jsitooling')
+      File.write(jsitooling_modulemap_dst, updated)
+    end
+
+    hermes_xcconfigs = [
+      File.join(sandbox_root, 'Target Support Files', 'React-RuntimeHermes', 'React-RuntimeHermes.debug.xcconfig'),
+      File.join(sandbox_root, 'Target Support Files', 'React-RuntimeHermes', 'React-RuntimeHermes.release.xcconfig'),
+    ]
+    hermes_xcconfigs.each do |xcconfig|
+      next unless File.exist?(xcconfig)
+      contents = File.read(xcconfig)
+      updated = contents.gsub(
+        '${PODS_ROOT}/Headers/Public/react_runtime/React-jsitooling.modulemap',
+        '${PODS_ROOT}/Headers/Public/react_jsitooling/React-jsitooling.modulemap'
+      )
+      File.write(xcconfig, updated) if contents != updated
+    end
+
+    # Ensure any remaining configs/project references point to the relocated modulemap.
+    old_jsitooling = '${PODS_ROOT}/Headers/Public/react_runtime/React-jsitooling.modulemap'
+    new_jsitooling = '${PODS_ROOT}/Headers/Public/react_jsitooling/React-jsitooling.modulemap'
+    files_to_patch = Dir.glob(File.join(sandbox_root, 'Target Support Files', '**', '*.xcconfig'))
+    files_to_patch << File.join(sandbox_root, 'Pods.xcodeproj', 'project.pbxproj')
+    files_to_patch.each do |file_path|
+      next unless File.exist?(file_path)
+      contents = File.read(file_path)
+      updated = contents.gsub(old_jsitooling, new_jsitooling)
+      File.write(file_path, updated) if contents != updated
+    end
+
+    # Allow non-modular includes in Pods to avoid build errors with modular headers.
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.1'
+      end
+    end
+  end
+end

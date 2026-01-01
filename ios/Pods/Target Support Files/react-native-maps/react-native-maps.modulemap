@@ -1,0 +1,6 @@
+framework module ReactNativeMaps {
+  umbrella header "react-native-maps-umbrella.h"
+
+  export *
+  module * { export * }
+}

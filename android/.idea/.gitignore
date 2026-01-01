@@ -1,0 +1,91 @@
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Editors/IDE ---
+.vscode/
+.idea/
+*.iml
+
+# --- Node / tooling ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json # keep ONE lockfile; remove this if you use yarn.lock or pnpm-lock.yaml
+# If you use Yarn:
+# !yarn.lock
+# If you use pnpm:
+# !pnpm-lock.yaml
+
+# Jest / coverage / caches
+coverage/
+jest-cache/
+jest-stare/
+*.tsbuildinfo
+.tmp/
+.temp/
+.tmpdir/
+.cache/
+metro-cache/
+**/.DS_Store
+
+# --- Env / secrets (commit an example instead) ---
+.env
+.env.*
+!.env.example
+.keystore
+*.keystore
+keystore.properties
+*.p12
+*.cer
+*.mobileprovision
+
+# --- Android ---
+android/.gradle/
+android/build/
+android/**/build/
+android/**/captures/
+android/local.properties
+android/*.iml
+android/app/debug.keystore
+# Gradle wrapper logs
+.gradle/
+# NDK / misc
+android/.cxx/
+
+# --- iOS ---
+ios/build/
+ios/DerivedData/
+ios/*.xcuserstate
+ios/**/xcuserdata/
+# If you DO NOT commit Pods (common for RN):
+ios/Pods/
+# If you DO commit Pods, comment the line above and UNignore:
+# !ios/Pods/
+# Xcode noise
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# --- Fastlane (if used) ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# --- Buck (rare, but some setups use it) ---
+.buckconfig.local
+buck-out/
+.buckd/
+*.buckd
+.buckversion
+
+# --- Watchman ---
+.watchman/

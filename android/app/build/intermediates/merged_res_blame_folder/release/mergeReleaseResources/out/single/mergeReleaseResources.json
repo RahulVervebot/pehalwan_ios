@@ -1,0 +1,450 @@
+[
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_user2.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_user2.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_tabs.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_tabs.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-ldpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_small_pic2.jpg.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_small_pic2.jpg"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xhdpi_node_modules_reactnavigation_elements_lib_module_assets_searchicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xhdpi/node_modules_reactnavigation_elements_lib_module_assets_searchicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xhdpi_node_modules_reactnavigation_elements_lib_module_assets_backicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xhdpi/node_modules_reactnavigation_elements_lib_module_assets_backicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxxhdpi_node_modules_reactnavigation_elements_lib_module_assets_searchicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxxhdpi/node_modules_reactnavigation_elements_lib_module_assets_searchicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_wallet.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_wallet.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_home2.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_home2.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_shoppingbag.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_shoppingbag.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_popular_pic4.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_popular_pic4.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_featured_pic1.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_featured_pic1.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_addition.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_addition.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_user3.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_user3.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_small_pic1.jpg.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_small_pic1.jpg"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_google.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_google.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_home3.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_home3.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_modal.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_modal.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_flags_spanish.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_flags_spanish.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_home.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_home.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-mdpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-mdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_badge.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_badge.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_accordion.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_accordion.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_messenger.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_messenger.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.w3cart.app-main-119:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxxhdpi_node_modules_reactnavigation_elements_lib_module_assets_backicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxxhdpi/node_modules_reactnavigation_elements_lib_module_assets_backicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_list.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_list.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_featured_pic2.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_featured_pic2.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnativestars_exampleimages_starhalf.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnativestars_exampleimages_starhalf.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_chart.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_chart.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-ldpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-ldpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xhdpi_node_modules_reactnavigation_elements_lib_module_assets_closeicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xhdpi/node_modules_reactnavigation_elements_lib_module_assets_closeicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_bottomsheet.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_bottomsheet.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_heart.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_heart.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_flags_unitedstates.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_flags_unitedstates.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnativestars_exampleimages_starempty.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnativestars_exampleimages_starempty.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_share.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_share.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_toggle.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_toggle.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_input.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_input.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-ldpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-ldpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-hdpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-hdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_polygon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_polygon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_small_pic3.jpg.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_small_pic3.jpg"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_pricing.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_pricing.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_facebook.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_facebook.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxxhdpi_node_modules_reactnavigation_elements_lib_module_assets_clearicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxxhdpi/node_modules_reactnavigation_elements_lib_module_assets_clearicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_trading_pic1.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_trading_pic1.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_featured_pic4.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_featured_pic4.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_thumbsup.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_thumbsup.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_menu.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_menu.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xhdpi_node_modules_reactnavigation_elements_lib_module_assets_clearicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xhdpi/node_modules_reactnavigation_elements_lib_module_assets_clearicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxxhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_search.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_search.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_popular_pic2.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_popular_pic2.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_clock.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_clock.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.w3cart.app-main-119:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_flags_german.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_flags_german.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_exchange.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_exchange.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_bag.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_bag.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnativestars_exampleimages_starfilled.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnativestars_exampleimages_starfilled.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_trading_pic2.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_trading_pic2.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_elements_lib_module_assets_closeicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_elements_lib_module_assets_closeicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/drawable/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/raw_keep.xml.flat",
+        "source": "com.w3cart.app-res-112:/raw/keep.xml"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_popular_pic1.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_popular_pic1.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_elements_lib_module_assets_backicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_elements_lib_module_assets_backicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_flags_india.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_flags_india.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xhdpi_node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xhdpi/node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxhdpi_node_modules_reactnavigation_elements_lib_module_assets_clearicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxhdpi/node_modules_reactnavigation_elements_lib_module_assets_clearicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_collage.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_collage.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_blog.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_blog.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_elements_lib_module_assets_backiconmask.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_elements_lib_module_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_category.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_category.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_small_pic4.jpg.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_small_pic4.jpg"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_sun.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_sun.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxhdpi_node_modules_reactnavigation_elements_lib_module_assets_searchicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxhdpi/node_modules_reactnavigation_elements_lib_module_assets_searchicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_table.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_table.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_moon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_moon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_featured_pic3.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_featured_pic3.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_flags_italian.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_flags_italian.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.w3cart.app-main-119:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_elements_lib_module_assets_searchicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_elements_lib_module_assets_searchicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxhdpi_node_modules_reactnavigation_elements_lib_module_assets_closeicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxhdpi/node_modules_reactnavigation_elements_lib_module_assets_closeicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_node_modules_reactnavigation_elements_lib_module_assets_clearicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/node_modules_reactnavigation_elements_lib_module_assets_clearicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxhdpi_node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxhdpi/node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxxhdpi_node_modules_reactnavigation_elements_lib_module_assets_closeicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxxhdpi/node_modules_reactnavigation_elements_lib_module_assets_closeicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_user.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_user.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_user.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_user.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxxhdpi_node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxxhdpi/node_modules_reactnavigation_drawer_lib_module_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_icons_divider.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_icons_divider.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-xxhdpi_node_modules_reactnavigation_elements_lib_module_assets_backicon.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-xxhdpi/node_modules_reactnavigation_elements_lib_module_assets_backicon.png"
+    },
+    {
+        "merged": "com.w3cart.app-release-118:/drawable-mdpi_app_assets_images_popular_pic3.png.flat",
+        "source": "com.w3cart.app-res-112:/drawable-mdpi/app_assets_images_popular_pic3.png"
+    }
+]

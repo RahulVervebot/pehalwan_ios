@@ -1,0 +1,141 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/AntDesign.ttf",
+      "sha1": "4e77868439280fb434d4697c7b911271406c81f3"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-Bold.ttf",
+      "sha1": "8f1d1ade3803efd38e7f6036c6f61d12ba23dd52"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-BoldItalic.ttf",
+      "sha1": "b7a9cc4488f330547fcb2e28df1d7e92b292b6e3"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-Italic.ttf",
+      "sha1": "1a236f8cffd21a11256b4ba03898cb4156225226"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-Medium.ttf",
+      "sha1": "6c1f2f7c4e3a18f742adbc1a0a3bc57776267230"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-MediumItalic.ttf",
+      "sha1": "9a72d9d992c9e3934810a53ca3218b51bb53fc34"
+    },
+    {
+      "path": "app/assets/fonts/DMSans-Regular.ttf",
+      "sha1": "076cd96e8ef4aaeeae3f1b855207194de40d3154"
+    },
+    {
+      "path": "app/assets/fonts/Entypo.ttf",
+      "sha1": "12b5670eb178138f77285d5f2c246d3cc5fa67d6"
+    },
+    {
+      "path": "app/assets/fonts/EvilIcons.ttf",
+      "sha1": "91d377ea3cf47490b256c2ed081704a7dabdae0c"
+    },
+    {
+      "path": "app/assets/fonts/Feather.ttf",
+      "sha1": "e6604258b1ced5efd51360875d782fca65381d47"
+    },
+    {
+      "path": "app/assets/fonts/FontAwesome.ttf",
+      "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+    },
+    {
+      "path": "app/assets/fonts/FontAwesome5_Brands.ttf",
+      "sha1": "3fa2d67cef22da5c3f3eb5730c6afbd6fecf0372"
+    },
+    {
+      "path": "app/assets/fonts/FontAwesome5_Regular.ttf",
+      "sha1": "7d849a3981a716e2ba4a84634bc57d0b8054a6a3"
+    },
+    {
+      "path": "app/assets/fonts/FontAwesome5_Solid.ttf",
+      "sha1": "c1b9fae262f42868c075ac865a8ab34920e20a2c"
+    },
+    {
+      "path": "app/assets/fonts/Fontisto.ttf",
+      "sha1": "c090a3ec96a3f1bb9b615c2f3f204ce0dcdcdbc3"
+    },
+    {
+      "path": "app/assets/fonts/Foundation.ttf",
+      "sha1": "4b2bce6c792493a4a5716b6fec2dbefe89492c3f"
+    },
+    {
+      "path": "app/assets/fonts/Ionicons.ttf",
+      "sha1": "b5281fbfa43129abc3e412dd938cfcf0b77de999"
+    },
+    {
+      "path": "app/assets/fonts/MaterialCommunityIcons.ttf",
+      "sha1": "4c2a838b00dbb5e8bb1b368fce0de534e8eb241c"
+    },
+    {
+      "path": "app/assets/fonts/MaterialIcons.ttf",
+      "sha1": "1943803d652750c8ec60415f1e57401c70e72d25"
+    },
+    {
+      "path": "app/assets/fonts/Octicons.ttf",
+      "sha1": "56acefc0731f35ee23b195b1c8cb5fa94a0db97b"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Black.ttf",
+      "sha1": "869d4331ed87830e8f19105aff140f1458655e95"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-BlackItalic.ttf",
+      "sha1": "908c8317572c7cff1be2155688f93f95c47c0c5c"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Bold.ttf",
+      "sha1": "3a4a7ff4fdba5317d6941e2d66e629df6c3c8cf3"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-BoldItalic.ttf",
+      "sha1": "e60a97022d9be48539250d34f6385b5f31adde3f"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Italic.ttf",
+      "sha1": "7a1bc639173979e30cfff371155bacd085229650"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Light.ttf",
+      "sha1": "1f9e268d4e7502ea2d1d34957cbefc620501430d"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-LightItalic.ttf",
+      "sha1": "6ea5f5c49e0b329400a17b0efd961ca3a4bc9b23"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Medium.ttf",
+      "sha1": "b5ba3632933756e9f7e8a0f83bfe90c215a768e2"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-MediumItalic.ttf",
+      "sha1": "ffec707f02edfa4bedca63510dc5e4358cf9c94d"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Regular.ttf",
+      "sha1": "ba879317acdc045b8fa78cb8f948650627d0477c"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-Thin.ttf",
+      "sha1": "2e5609fc4b59d3d133007785e689373573da7d91"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-ThinItalic.ttf",
+      "sha1": "632be75b29d9768a3fa194b2d195bd5e966927fa"
+    },
+    {
+      "path": "app/assets/fonts/SimpleLineIcons.ttf",
+      "sha1": "9ffb81a5a11112e292f2cc323e98486bad597599"
+    },
+    {
+      "path": "app/assets/fonts/Zocial.ttf",
+      "sha1": "6a48a962b06cc3acbdfd61df0d9a34744eea5e8d"
+    }
+  ]
+}

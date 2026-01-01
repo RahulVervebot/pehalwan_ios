@@ -1,0 +1,13 @@
+
+Latest npm run ios error:
+module map file '/Users/vervebotapps/work/pehalwan_ios/ios/Pods/Headers/Public/react_runtime/React-jsitooling.modulemap' not found (in target 'React-Core' from project 'Pods')
+Failed to build ios project. xcodebuild exited with error code 65.
+
+Latest npm run ios attempt:
+Build ran but timed out after 180s while xcodebuild was running; no explicit error logged before timeout.
+
+Latest npm run ios attempt:
+Build ran but timed out after 300s while xcodebuild was running; no explicit build error emitted before timeout.
+
+Verbose run:
+Ran `npx react-native run-ios --verbose` and captured output to ios-build-verbose.log. No "error:" or "BUILD FAILED" lines were found before the 300s timeout.

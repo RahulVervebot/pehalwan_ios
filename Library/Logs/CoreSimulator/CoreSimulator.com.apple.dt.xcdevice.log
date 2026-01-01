@@ -1,0 +1,68 @@
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: Unable to deliver request ({
+	    "developer_dir" = "/Applications/Xcode.app/Contents/Developer";
+	    request = "set_developer_dir";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Warning>: Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:26:13 vervebots-MacBook-Pro com.apple.dt.xcdevice[19117] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: Unable to deliver request ({
+	    "developer_dir" = "/Applications/Xcode.app/Contents/Developer";
+	    request = "set_developer_dir";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Warning>: Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:57:21 vervebots-MacBook-Pro com.apple.dt.xcdevice[33098] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: Unable to deliver request ({
+	    "developer_dir" = "/Applications/Xcode.app/Contents/Developer";
+	    request = "set_developer_dir";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Warning>: Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 11:59:39 vervebots-MacBook-Pro com.apple.dt.xcdevice[44344] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: Unable to deliver request ({
+	    "developer_dir" = "/Applications/Xcode.app/Contents/Developer";
+	    request = "set_developer_dir";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Warning>: Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: Unable to deliver request ({
+	    request = "notification_subscription";
+	    "set_path" = "/Users/vervebotapps/Library/Developer/CoreSimulator/Devices";
+	}) because we are not connected to CoreSimulatorService.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: simdiskimaged returned error (invalid), marking disconnected.
+Dec 31 12:16:29 vervebots-MacBook-Pro com.apple.dt.xcdevice[57599] <Error>: simdiskimaged returned error (invalid), marking disconnected.

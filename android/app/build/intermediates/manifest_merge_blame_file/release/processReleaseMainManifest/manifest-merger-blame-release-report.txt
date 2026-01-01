@@ -1,0 +1,1452 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.w3cart"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:4:7-79
+12-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:4:24-76
+13
+14    <meta-data
+14-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:6:1-8:62
+15        android:name="com.onesignal.NotificationIcon"
+15-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:7:5-50
+16        android:resource="@drawable/ic_stat_onesignal_default" />
+16-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:8:5-59
+17
+18    <!-- optional but helpful -->
+19    <meta-data
+19-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:11:1-13:30
+20        android:name="com.onesignal.NotificationAccentColor"
+20-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:12:5-57
+21        android:value="FF3D00" />
+21-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:13:5-27
+22
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[:react-native-firebase_auth] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:5-68
+23-->[:react-native-firebase_auth] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:22-65
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+24-->[:react-native-firebase_auth] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:5-79
+24-->[:react-native-firebase_auth] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:22-76
+25    <queries>
+25-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:10:5-18:15
+26
+27        <!-- Added to check the default browser that will host the AuthFlow. -->
+28        <intent>
+28-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:13:9-17:18
+29            <action android:name="android.intent.action.VIEW" />
+29-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+29-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+30
+31            <data android:scheme="http" />
+31-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+31-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+32        </intent>
+33        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+34        <package android:name="com.android.chrome" /> <!-- Needs to be explicitly declared on Android R+ -->
+34-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:11:9-54
+34-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:11:18-51
+35        <package android:name="com.google.android.apps.maps" />
+35-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
+35-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
+36    </queries> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+37    <permission
+37-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:8:5-10:47
+38        android:name="com.w3cart.permission.C2D_MESSAGE"
+38-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:9:9-63
+39        android:protectionLevel="signature" />
+39-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:10:9-44
+40
+41    <uses-permission android:name="com.w3cart.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+41-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:12:5-79
+41-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:12:22-76
+42    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+42-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:17:5-82
+42-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:17:22-79
+43    <!--
+44 Required so the device vibrates on receiving a push notification.
+45         Vibration settings of the device still apply.
+46    -->
+47    <uses-permission android:name="android.permission.VIBRATE" />
+47-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:22:5-66
+47-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:22:22-63
+48    <!--
+49 Use to restore notifications the user hasn't interacted with.
+50     They could be missed notifications if the user reboots their device if this isn't in place.
+51    -->
+52    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+52-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:27:5-81
+52-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:27:22-78
+53    <!-- Samsung -->
+54    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+54-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:29:5-86
+54-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:29:22-83
+55    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+55-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:30:5-87
+55-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:30:22-84
+56    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+56-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:31:5-81
+56-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:31:22-78
+57    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+57-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:32:5-83
+57-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:32:22-80
+58    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+58-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:33:5-88
+58-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:33:22-85
+59    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+59-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:34:5-92
+59-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:34:22-89
+60    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+60-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:35:5-84
+60-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:35:22-81
+61    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+61-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:36:5-83
+61-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:36:22-80
+62    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+62-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:37:5-91
+62-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:37:22-88
+63    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+63-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:38:5-92
+63-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:38:22-89
+64    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+64-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:39:5-93
+64-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:39:22-90
+65    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+65-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:40:5-73
+65-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:40:22-70
+66    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+66-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:41:5-82
+66-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:41:22-79
+67    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+67-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:42:5-83
+67-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:42:22-80
+68    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+68-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:43:5-88
+68-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:43:22-85
+69    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+69-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:44:5-89
+69-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:44:22-86
+70
+71    <uses-feature
+71-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
+72        android:glEsVersion="0x00020000"
+72-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
+73        android:required="true" />
+73-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
+74
+75    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+75-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/f62f1d1653201a08554fb3253e50f5bc/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+75-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/f62f1d1653201a08554fb3253e50f5bc/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+76    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+76-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:5-77
+76-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:22-74
+77
+78    <permission
+78-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+79        android:name="com.w3cart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+79-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+80        android:protectionLevel="signature" />
+80-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+81
+82    <uses-permission android:name="com.w3cart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+82-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+82-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+83
+84    <application
+84-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:15:5-35:19
+85        android:name="com.w3cart.MainApplication"
+85-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:16:7-38
+86        android:allowBackup="false"
+86-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:20:7-34
+87        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+87-->[androidx.core:core:1.16.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/23ed5501ab1315414e356953585b620f/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+88        android:extractNativeLibs="false"
+89        android:icon="@mipmap/ic_launcher"
+89-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:18:7-41
+90        android:label="@string/app_name"
+90-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:17:7-39
+91        android:roundIcon="@mipmap/ic_launcher_round"
+91-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:19:7-52
+92        android:supportsRtl="true"
+92-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:22:7-33
+93        android:theme="@style/AppTheme" >
+93-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:21:7-38
+94        <activity
+94-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:23:7-34:18
+95            android:name="com.w3cart.MainActivity"
+95-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:24:9-37
+96            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+96-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:26:9-118
+97            android:exported="true"
+97-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:29:9-32
+98            android:label="@string/app_name"
+98-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:25:9-41
+99            android:launchMode="singleTask"
+99-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:27:9-40
+100            android:windowSoftInputMode="adjustResize" >
+100-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:28:9-51
+101            <intent-filter>
+101-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:30:9-33:25
+102                <action android:name="android.intent.action.MAIN" />
+102-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:31:13-65
+102-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:31:21-62
+103
+104                <category android:name="android.intent.category.LAUNCHER" />
+104-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:32:13-73
+104-->/Users/vervebotapps/work/vfm_ecommerce_app/android/app/src/main/AndroidManifest.xml:32:23-70
+105            </intent-filter>
+106        </activity>
+107        <activity
+107-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:9-14:74
+108            android:name="com.reactnativestripesdk.CustomPaymentMethodActivity"
+108-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:13-80
+109            android:excludeFromRecents="true"
+109-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:13-46
+110            android:exported="false"
+110-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:13-37
+111            android:launchMode="singleTop"
+111-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:12:13-43
+112            android:noHistory="true"
+112-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:13:13-37
+113            android:theme="@style/Theme.StripeReactNative.Transparent" />
+113-->[:stripe_stripe-react-native] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@stripe/stripe-react-native/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:14:13-71
+114
+115        <service
+115-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:12:9-14:40
+116            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+116-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:13:13-103
+117            android:exported="false" />
+117-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:14:13-37
+118        <service
+118-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:15:9-21:19
+119            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+119-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:16:13-95
+120            android:exported="false" >
+120-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:17:13-37
+121            <intent-filter>
+121-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:18:13-20:29
+122                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+122-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:19:17-78
+122-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:19:25-75
+123            </intent-filter>
+124        </service>
+125
+126        <receiver
+126-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:23:9-30:20
+127            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+127-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:24:13-96
+128            android:exported="true"
+128-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:25:13-36
+129            android:permission="com.google.android.c2dm.permission.SEND" >
+129-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:26:13-73
+130            <intent-filter>
+130-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:27:13-29:29
+131                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+131-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:17-81
+131-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:25-78
+132            </intent-filter>
+133        </receiver>
+134
+135        <meta-data
+135-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:32:9-34:37
+136            android:name="delivery_metrics_exported_to_big_query_enabled"
+136-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:33:13-74
+137            android:value="false" />
+137-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:34:13-34
+138        <meta-data
+138-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:35:9-37:36
+139            android:name="firebase_messaging_auto_init_enabled"
+139-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:36:13-64
+140            android:value="true" />
+140-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:37:13-33
+141        <meta-data
+141-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:38:9-40:37
+142            android:name="firebase_messaging_notification_delegation_enabled"
+142-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:39:13-78
+143            android:value="false" />
+143-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:40:13-34
+144        <meta-data
+144-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:41:9-43:32
+145            android:name="com.google.firebase.messaging.default_notification_channel_id"
+145-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:42:13-89
+146            android:value="" />
+146-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:43:13-29
+147        <meta-data
+147-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:44:9-46:47
+148            android:name="com.google.firebase.messaging.default_notification_color"
+148-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:45:13-84
+149            android:resource="@color/white" />
+149-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:46:13-44
+150        <meta-data
+150-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:9-11:36
+151            android:name="app_data_collection_default_enabled"
+151-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:13-63
+152            android:value="true" />
+152-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:13-33
+153
+154        <service
+154-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:13:9-21:19
+155            android:name="com.google.firebase.components.ComponentDiscoveryService"
+155-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:14:13-84
+156            android:directBootAware="true"
+156-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:15:13-43
+157            android:exported="false" >
+157-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:16:13-37
+158            <meta-data
+158-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:18:13-20:85
+159                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+159-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:19:17-120
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:20:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+162                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+162-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
+165                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+165-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
+168                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+168-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-firestore:26.0.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/6589e768cd2f26bfed1ba667dc00e651/transformed/jetified-firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:57:13-59:85
+171                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+171-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:58:17-122
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:59:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:60:13-62:85
+174                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+174-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:61:17-119
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:62:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:15:13-17:85
+177                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+177-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:16:17-130
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:17:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:18:13-20:85
+180                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+180-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:19:17-127
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-installations:19.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0085e382acd2687d7ded35a97b642e22/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:20:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+183                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+183-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/151420e4f4ab8351e2a2a09c1f1f6e89/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+186                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+186-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/151420e4f4ab8351e2a2a09c1f1f6e89/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/151420e4f4ab8351e2a2a09c1f1f6e89/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+188        </service>
+189
+190        <provider
+190-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:23:9-27:38
+191            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+191-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:24:13-88
+192            android:authorities="com.w3cart.reactnativefirebaseappinitprovider"
+192-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:25:13-86
+193            android:exported="false"
+193-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:26:13-37
+194            android:initOrder="99" />
+194-->[:react-native-firebase_app] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:27:13-35
+195
+196        <activity
+196-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:21:9-65:20
+197            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+197-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:22:13-109
+198            android:exported="true"
+198-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:23:13-36
+199            android:launchMode="singleTask" >
+199-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:24:13-44
+200            <intent-filter>
+200-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:25:13-64:29
+201                <action android:name="android.intent.action.VIEW" />
+201-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+201-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+202
+203                <category android:name="android.intent.category.DEFAULT" />
+203-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+203-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+204                <category android:name="android.intent.category.BROWSABLE" />
+204-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+204-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+205
+206                <!-- Returning from app2app: return_url is triggered to reopen web AuthFlow and poll accounts. -->
+207                <data
+207-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+208                    android:host="link-accounts"
+209                    android:pathPrefix="/com.w3cart/authentication_return"
+210                    android:scheme="stripe-auth" />
+210-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+211
+212                <!-- Returning from app2app: return_url is triggered to reopen native AuthFlow and poll accounts. -->
+213                <data
+213-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+214                    android:host="link-native-accounts"
+215                    android:pathPrefix="/com.w3cart/authentication_return"
+216                    android:scheme="stripe-auth" />
+216-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+217
+218                <!-- End of web AuthFlow success and cancel URIs that begin with "stripe-auth://link-accounts/{app-id}/...” -->
+219                <data
+219-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+220                    android:host="link-accounts"
+221                    android:path="/com.w3cart/success"
+222                    android:scheme="stripe-auth" />
+222-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+223                <data
+223-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+224                    android:host="link-accounts"
+225                    android:path="/com.w3cart/cancel"
+226                    android:scheme="stripe-auth" />
+226-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+227
+228                <!-- Opening app2app: Web flow triggers stripe-auth://native-redirect/{app-id}/http://web-that-redirects-to-native -->
+229                <data
+229-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+230                    android:host="native-redirect"
+231                    android:pathPrefix="/com.w3cart"
+232                    android:scheme="stripe-auth" />
+232-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+233
+234                <!-- Accepts success/cancel/fail URIs that begin with "stripe://auth-redirect” -->
+235                <data
+235-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+236                    android:host="auth-redirect"
+237                    android:pathPrefix="/com.w3cart"
+238                    android:scheme="stripe" />
+238-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+239            </intent-filter>
+240        </activity>
+241        <activity
+241-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:66:9-69:77
+242            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+242-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:67:13-101
+243            android:exported="false"
+243-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:68:13-37
+244            android:theme="@style/StripeFinancialConnectionsDefaultTheme" />
+244-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:69:13-74
+245        <activity
+245-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:70:9-74:58
+246            android:name="com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity"
+246-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:71:13-110
+247            android:exported="false"
+247-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:72:13-37
+248            android:theme="@style/StripeFinancialConnectionsDefaultTheme"
+248-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:73:13-74
+249            android:windowSoftInputMode="adjustResize" />
+249-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:74:13-55
+250        <activity
+250-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:8:9-11:69
+251            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+251-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:9:13-80
+252            android:exported="false"
+252-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:10:13-37
+253            android:theme="@style/StripePaymentSheetDefaultTheme" />
+253-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:11:13-66
+254        <activity
+254-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:12:9-15:69
+255            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+255-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:13:13-82
+256            android:exported="false"
+256-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:14:13-37
+257            android:theme="@style/StripePaymentSheetDefaultTheme" />
+257-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:15:13-66
+258        <activity
+258-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:16:9-19:69
+259            android:name="com.stripe.android.customersheet.CustomerSheetActivity"
+259-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:17:13-82
+260            android:exported="false"
+260-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:18:13-37
+261            android:theme="@style/StripePaymentSheetDefaultTheme" />
+261-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:19:13-66
+262        <activity
+262-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:20:9-23:69
+263            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+263-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:21:13-97
+264            android:exported="false"
+264-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:22:13-37
+265            android:theme="@style/StripePaymentSheetDefaultTheme" />
+265-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:23:13-66
+266        <activity
+266-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:24:9-27:69
+267            android:name="com.stripe.android.paymentsheet.addresselement.AutocompleteActivity"
+267-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:25:13-95
+268            android:exported="false"
+268-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:26:13-37
+269            android:theme="@style/StripePaymentSheetDefaultTheme" />
+269-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:27:13-66
+270        <activity
+270-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:28:9-31:69
+271            android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity"
+271-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:29:13-118
+272            android:exported="false"
+272-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:30:13-37
+273            android:theme="@style/StripePaymentSheetDefaultTheme" />
+273-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:31:13-66
+274        <activity
+274-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:32:9-35:69
+275            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+275-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:33:13-105
+276            android:exported="false"
+276-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:34:13-37
+277            android:theme="@style/StripePaymentSheetDefaultTheme" />
+277-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:35:13-66
+278        <activity
+278-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:36:9-39:69
+279            android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity"
+279-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:37:13-82
+280            android:exported="false"
+280-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:38:13-37
+281            android:theme="@style/StripePaymentSheetDefaultTheme" />
+281-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:39:13-66
+282        <activity
+282-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:40:9-43:68
+283            android:name="com.stripe.android.paymentsheet.ExternalPaymentMethodProxyActivity"
+283-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:41:13-94
+284            android:exported="false"
+284-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:42:13-37
+285            android:theme="@style/StripePayLauncherDefaultTheme" />
+285-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:43:13-65
+286        <activity
+286-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:44:9-47:68
+287            android:name="com.stripe.android.paymentelement.confirmation.cpms.CustomPaymentMethodProxyActivity"
+287-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:45:13-112
+288            android:exported="false"
+288-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:46:13-37
+289            android:theme="@style/StripePayLauncherDefaultTheme" />
+289-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:47:13-65
+290        <activity
+290-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:48:9-50:69
+291            android:name="com.stripe.android.paymentsheet.paymentdatacollection.cvcrecollection.CvcRecollectionActivity"
+291-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:49:13-121
+292            android:theme="@style/StripePaymentSheetDefaultTheme" />
+292-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:50:13-66
+293        <activity
+293-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:51:9-53:69
+294            android:name="com.stripe.android.paymentelement.embedded.form.FormActivity"
+294-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:52:13-88
+295            android:theme="@style/StripePaymentSheetDefaultTheme" />
+295-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:53:13-66
+296        <activity
+296-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:54:9-56:69
+297            android:name="com.stripe.android.paymentelement.embedded.manage.ManageActivity"
+297-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:55:13-92
+298            android:theme="@style/StripePaymentSheetDefaultTheme" />
+298-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:56:13-66
+299        <activity
+299-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:57:9-60:61
+300            android:name="com.stripe.android.attestation.AttestationActivity"
+300-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:58:13-78
+301            android:exported="false"
+301-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:59:13-37
+302            android:theme="@style/StripeTransparentTheme" />
+302-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:60:13-58
+303        <activity
+303-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:61:9-66:69
+304            android:name="com.stripe.android.link.LinkActivity"
+304-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:62:13-64
+305            android:autoRemoveFromRecents="true"
+305-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:63:13-49
+306            android:exported="false"
+306-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:64:13-37
+307            android:label="@string/stripe_link"
+307-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:65:13-48
+308            android:theme="@style/StripePaymentSheetDefaultTheme" />
+308-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:66:13-66
+309        <activity
+309-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:67:9-72:61
+310            android:name="com.stripe.android.link.LinkForegroundActivity"
+310-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:68:13-74
+311            android:autoRemoveFromRecents="true"
+311-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:69:13-49
+312            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize"
+312-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:70:13-115
+313            android:launchMode="singleTop"
+313-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:71:13-43
+314            android:theme="@style/StripeTransparentTheme" />
+314-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:72:13-58
+315        <activity
+315-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:73:9-90:20
+316            android:name="com.stripe.android.link.LinkRedirectHandlerActivity"
+316-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:74:13-79
+317            android:autoRemoveFromRecents="true"
+317-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:75:13-49
+318            android:exported="true"
+318-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:76:13-36
+319            android:launchMode="singleInstance"
+319-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:77:13-48
+320            android:theme="@style/StripeTransparentTheme" >
+320-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:78:13-58
+321            <intent-filter>
+321-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:79:13-89:29
+322                <action android:name="android.intent.action.VIEW" />
+322-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+322-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+323
+324                <category android:name="android.intent.category.DEFAULT" />
+324-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+324-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+325                <category android:name="android.intent.category.BROWSABLE" />
+325-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+325-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+326
+327                <data
+327-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+328                    android:host="complete"
+329                    android:path="/com.w3cart"
+330                    android:scheme="link-popup" />
+330-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+331            </intent-filter>
+332        </activity>
+333        <activity
+333-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:91:9-93:69
+334            android:name="com.stripe.android.shoppay.ShopPayActivity"
+334-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:92:13-70
+335            android:theme="@style/StripePaymentSheetDefaultTheme" />
+335-->[com.stripe:paymentsheet:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/adc6f4d03bd39de141af5f639387e9e3/transformed/jetified-paymentsheet-21.29.2/AndroidManifest.xml:93:13-66
+336        <activity
+336-->[com.stripe:payments-ui-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/2def1cf7eaea04c2c3a535b413c43685/transformed/jetified-payments-ui-core-21.29.2/AndroidManifest.xml:8:9-11:69
+337            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+337-->[com.stripe:payments-ui-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/2def1cf7eaea04c2c3a535b413c43685/transformed/jetified-payments-ui-core-21.29.2/AndroidManifest.xml:9:13-80
+338            android:exported="false"
+338-->[com.stripe:payments-ui-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/2def1cf7eaea04c2c3a535b413c43685/transformed/jetified-payments-ui-core-21.29.2/AndroidManifest.xml:10:13-37
+339            android:theme="@style/StripePaymentSheetDefaultTheme" />
+339-->[com.stripe:payments-ui-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/2def1cf7eaea04c2c3a535b413c43685/transformed/jetified-payments-ui-core-21.29.2/AndroidManifest.xml:11:13-66
+340        <activity
+340-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:15:9-18:57
+341            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+341-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:16:13-78
+342            android:exported="false"
+342-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:17:13-37
+343            android:theme="@style/StripeDefaultTheme" />
+343-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:18:13-54
+344        <activity
+344-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:19:9-22:61
+345            android:name="com.stripe.android.view.PaymentRelayActivity"
+345-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:20:13-72
+346            android:exported="false"
+346-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:21:13-37
+347            android:theme="@style/StripeTransparentTheme" />
+347-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:22:13-58
+348        <!--
+349        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+350        launched the browser Activity will also handle the return URL deep link.
+351        -->
+352        <activity
+352-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:28:9-32:61
+353            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+353-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:29:13-85
+354            android:exported="false"
+354-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:30:13-37
+355            android:launchMode="singleTask"
+355-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:31:13-44
+356            android:theme="@style/StripeTransparentTheme" />
+356-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:32:13-58
+357        <activity
+357-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:33:9-50:20
+358            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+358-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:34:13-88
+359            android:exported="true"
+359-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:35:13-36
+360            android:launchMode="singleTask"
+360-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:36:13-44
+361            android:theme="@style/StripeTransparentTheme" >
+361-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:37:13-58
+362            <intent-filter>
+362-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:38:13-49:29
+363                <action android:name="android.intent.action.VIEW" />
+363-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+363-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+364
+365                <category android:name="android.intent.category.DEFAULT" />
+365-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+365-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+366                <category android:name="android.intent.category.BROWSABLE" />
+366-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+366-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+367
+368                <!-- Must match `DefaultReturnUrl#value`. -->
+369                <data
+369-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+370                    android:host="payment_return_url"
+371                    android:path="/com.w3cart"
+372                    android:scheme="stripesdk" />
+372-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+373            </intent-filter>
+374        </activity>
+375        <activity
+375-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:51:9-54:57
+376            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+376-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:52:13-114
+377            android:exported="false"
+377-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:53:13-37
+378            android:theme="@style/StripeDefaultTheme" />
+378-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:54:13-54
+379        <activity
+379-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:55:9-58:66
+380            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+380-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:56:13-90
+381            android:exported="false"
+381-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:57:13-37
+382            android:theme="@style/StripeGooglePayDefaultTheme" />
+382-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:58:13-63
+383        <activity
+383-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:59:9-62:66
+384            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+384-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:60:13-103
+385            android:exported="false"
+385-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:61:13-37
+386            android:theme="@style/StripeGooglePayDefaultTheme" />
+386-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:62:13-63
+387        <activity
+387-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:63:9-66:68
+388            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+388-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:64:13-107
+389            android:exported="false"
+389-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:65:13-37
+390            android:theme="@style/StripePayLauncherDefaultTheme" />
+390-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:66:13-65
+391        <activity
+391-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:67:9-70:61
+392            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+392-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:68:13-97
+393            android:exported="false"
+393-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:69:13-37
+394            android:theme="@style/StripeTransparentTheme" />
+394-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:70:13-58
+395        <activity
+395-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:71:9-74:61
+396            android:name="com.stripe.android.challenge.PassiveChallengeActivity"
+396-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:72:13-81
+397            android:exported="false"
+397-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:73:13-37
+398            android:theme="@style/StripeTransparentTheme" />
+398-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:74:13-58
+399        <activity
+399-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:75:9-78:61
+400            android:name="com.stripe.android.challenge.warmer.activity.PassiveChallengeWarmerActivity"
+400-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:76:13-103
+401            android:exported="false"
+401-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:77:13-37
+402            android:theme="@style/StripeTransparentTheme" />
+402-->[com.stripe:payments-core:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/e323e3a6980cf6b1225c930431cfd427/transformed/jetified-payments-core-21.29.2/AndroidManifest.xml:78:13-58
+403        <activity
+403-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:8:9-23:20
+404            android:name="com.stripe.android.financialconnections.lite.FinancialConnectionsSheetLiteRedirectActivity"
+404-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:9:13-118
+405            android:exported="true"
+405-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:10:13-36
+406            android:launchMode="singleTask" >
+406-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:11:13-44
+407            <intent-filter>
+407-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:12:13-22:29
+408                <action android:name="android.intent.action.VIEW" />
+408-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+408-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+409
+410                <category android:name="android.intent.category.DEFAULT" />
+410-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+410-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+411                <category android:name="android.intent.category.BROWSABLE" />
+411-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+411-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+412
+413                <data
+413-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+414                    android:host="financial-connections-lite"
+415                    android:pathPrefix="/com.w3cart/auth_redirect"
+416                    android:scheme="stripe" />
+416-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+417            </intent-filter>
+418        </activity>
+419        <activity
+419-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:24:9-26:69
+420            android:name="com.stripe.android.financialconnections.lite.FinancialConnectionsSheetLiteActivity"
+420-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:25:13-110
+421            android:theme="@style/StripeBottomSheetActivityTheme" />
+421-->[com.stripe:financial-connections-lite:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/d5339d60d2f5011cb75377f924a6b946/transformed/jetified-financial-connections-lite-21.29.2/AndroidManifest.xml:26:13-66
+422        <activity
+422-->[com.stripe:stripe-3ds2-android:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/aa58d29bb66e6637252fe3adebaf8a0f/transformed/jetified-stripe-3ds2-android-21.29.2/AndroidManifest.xml:8:9-12:54
+423            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+423-->[com.stripe:stripe-3ds2-android:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/aa58d29bb66e6637252fe3adebaf8a0f/transformed/jetified-stripe-3ds2-android-21.29.2/AndroidManifest.xml:9:13-81
+424            android:configChanges="orientation|screenSize"
+424-->[com.stripe:stripe-3ds2-android:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/aa58d29bb66e6637252fe3adebaf8a0f/transformed/jetified-stripe-3ds2-android-21.29.2/AndroidManifest.xml:10:13-59
+425            android:exported="false"
+425-->[com.stripe:stripe-3ds2-android:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/aa58d29bb66e6637252fe3adebaf8a0f/transformed/jetified-stripe-3ds2-android-21.29.2/AndroidManifest.xml:11:13-37
+426            android:theme="@style/Stripe3DS2Theme" />
+426-->[com.stripe:stripe-3ds2-android:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/aa58d29bb66e6637252fe3adebaf8a0f/transformed/jetified-stripe-3ds2-android-21.29.2/AndroidManifest.xml:12:13-51
+427        <activity
+427-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+428            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+428-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+429            android:excludeFromRecents="true"
+429-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+430            android:exported="true"
+430-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+431            android:launchMode="singleTask"
+431-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+432            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+432-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+433            <intent-filter>
+433-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+434                <action android:name="android.intent.action.VIEW" />
+434-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+434-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+435
+436                <category android:name="android.intent.category.DEFAULT" />
+436-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+436-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+437                <category android:name="android.intent.category.BROWSABLE" />
+437-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+437-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+438
+439                <data
+439-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+440                    android:host="firebase.auth"
+441                    android:path="/"
+442                    android:scheme="genericidp" />
+442-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+443            </intent-filter>
+444        </activity>
+445        <activity
+445-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+446            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+446-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+447            android:excludeFromRecents="true"
+447-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+448            android:exported="true"
+448-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+449            android:launchMode="singleTask"
+449-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+450            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+450-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+451            <intent-filter>
+451-->[com.google.firebase:firebase-auth:24.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/5a15aaf6ca8d52321ba6cd64ddc701e8/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
+452                <action android:name="android.intent.action.VIEW" />
+452-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+452-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+453
+454                <category android:name="android.intent.category.DEFAULT" />
+454-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:17-76
+454-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:28:27-73
+455                <category android:name="android.intent.category.BROWSABLE" />
+455-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:17-78
+455-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:29:27-75
+456
+457                <data
+457-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:13-43
+458                    android:host="firebase.auth"
+459                    android:path="/"
+460                    android:scheme="recaptcha" />
+460-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:16:19-40
+461            </intent-filter>
+462        </activity>
+463
+464        <receiver
+464-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:47:9-58:20
+465            android:name="com.onesignal.notifications.receivers.FCMBroadcastReceiver"
+465-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:48:13-86
+466            android:exported="true"
+466-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:49:13-36
+467            android:permission="com.google.android.c2dm.permission.SEND" >
+467-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:50:13-73
+468
+469            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+470            <intent-filter android:priority="999" >
+470-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:53:13-57:29
+470-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:53:28-50
+471                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+471-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:17-81
+471-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:25-78
+472
+473                <category android:name="com.w3cart" />
+473-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:56:17-61
+473-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:56:27-58
+474            </intent-filter>
+475        </receiver>
+476
+477        <service
+477-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:60:9-66:19
+478            android:name="com.onesignal.notifications.services.HmsMessageServiceOneSignal"
+478-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:61:13-91
+479            android:exported="false" >
+479-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:62:13-37
+480            <intent-filter>
+480-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:63:13-65:29
+481                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+481-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:64:17-81
+481-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:64:25-78
+482            </intent-filter>
+483        </service> <!-- CAUTION: OneSignal backend includes the activity name in the payload, modifying the name without sync may result in notification click not firing -->
+484        <activity
+484-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:67:9-75:20
+485            android:name="com.onesignal.NotificationOpenedActivityHMS"
+485-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:68:13-71
+486            android:exported="true"
+486-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:69:13-36
+487            android:noHistory="true"
+487-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:70:13-37
+488            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+488-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:71:13-72
+489            <intent-filter>
+489-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:72:13-74:29
+490                <action android:name="android.intent.action.VIEW" />
+490-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:13-65
+490-->[com.stripe:financial-connections:21.29.2] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d3c102b5f4815a6090dc8c8a214b40f/transformed/jetified-financial-connections-21.29.2/AndroidManifest.xml:14:21-62
+491            </intent-filter>
+492        </activity>
+493
+494        <receiver
+494-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:77:9-79:39
+495            android:name="com.onesignal.notifications.receivers.NotificationDismissReceiver"
+495-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:78:13-93
+496            android:exported="true" />
+496-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:79:13-36
+497        <receiver
+497-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:80:9-87:20
+498            android:name="com.onesignal.notifications.receivers.BootUpReceiver"
+498-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:81:13-80
+499            android:exported="true" >
+499-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:82:13-36
+500            <intent-filter>
+500-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:83:13-86:29
+501                <action android:name="android.intent.action.BOOT_COMPLETED" />
+501-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:84:17-79
+501-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:84:25-76
+502                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+502-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:85:17-82
+502-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:85:25-79
+503            </intent-filter>
+504        </receiver>
+505        <receiver
+505-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:88:9-94:20
+506            android:name="com.onesignal.notifications.receivers.UpgradeReceiver"
+506-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:89:13-81
+507            android:exported="true" >
+507-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:90:13-36
+508            <intent-filter>
+508-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:91:13-93:29
+509                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+509-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:92:17-84
+509-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:92:25-81
+510            </intent-filter>
+511        </receiver>
+512
+513        <activity
+513-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:96:9-102:75
+514            android:name="com.onesignal.notifications.activities.NotificationOpenedActivity"
+514-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:97:13-93
+515            android:excludeFromRecents="true"
+515-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:98:13-46
+516            android:exported="true"
+516-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:99:13-36
+517            android:noHistory="true"
+517-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:100:13-37
+518            android:taskAffinity=""
+518-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:101:13-36
+519            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+519-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:102:13-72
+520        <activity
+520-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:103:9-108:75
+521            android:name="com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder"
+521-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:104:13-110
+522            android:excludeFromRecents="true"
+522-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:105:13-46
+523            android:exported="true"
+523-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:106:13-36
+524            android:noHistory="true"
+524-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:107:13-37
+525            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+525-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:108:13-72
+526
+527        <receiver
+527-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:29:9-40:20
+528            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+528-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:30:13-78
+529            android:exported="true"
+529-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:31:13-36
+530            android:permission="com.google.android.c2dm.permission.SEND" >
+530-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:32:13-73
+531            <intent-filter>
+531-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:27:13-29:29
+532                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+532-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:17-81
+532-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:28:25-78
+533            </intent-filter>
+534
+535            <meta-data
+535-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:37:13-39:40
+536                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+536-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:38:17-92
+537                android:value="true" />
+537-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:39:17-37
+538        </receiver>
+539        <!--
+540             FirebaseMessagingService performs security checks at runtime,
+541             but set to not exported to explicitly avoid allowing another app to call it.
+542        -->
+543        <service
+543-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:46:9-53:19
+544            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+544-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:47:13-82
+545            android:directBootAware="true"
+545-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:48:13-43
+546            android:exported="false" >
+546-->[com.google.firebase:firebase-messaging:25.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9a341f736a885b6e912ddff49087d773/transformed/jetified-firebase-messaging-25.0.1/AndroidManifest.xml:49:13-37
+547            <intent-filter android:priority="-500" >
+547-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:18:13-20:29
+548                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+548-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:19:17-78
+548-->[:react-native-firebase_messaging] /Users/vervebotapps/work/vfm_ecommerce_app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:19:25-75
+549            </intent-filter>
+550        </service>
+551
+552        <provider
+552-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+553            android:name="com.google.firebase.provider.FirebaseInitProvider"
+553-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+554            android:authorities="com.w3cart.firebaseinitprovider"
+554-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+555            android:directBootAware="true"
+555-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+556            android:exported="false"
+556-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+557            android:initOrder="100" />
+557-->[com.google.firebase:firebase-common:22.0.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0d1723df11357c3ebeefde42fa9e6f52/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+558
+559        <meta-data
+559-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/65a807579a314e01d8e3529d72e3c9be/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:23:9-25:69
+560            android:name="com.google.android.gms.version"
+560-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/65a807579a314e01d8e3529d72e3c9be/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:24:13-58
+561            android:value="@integer/google_play_services_version" />
+561-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/65a807579a314e01d8e3529d72e3c9be/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:25:13-66
+562
+563        <service
+563-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:11:9-14:72
+564            android:name="com.onesignal.core.services.SyncJobService"
+564-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:12:13-70
+565            android:exported="false"
+565-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:13:13-37
+566            android:permission="android.permission.BIND_JOB_SERVICE" />
+566-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:14:13-69
+567
+568        <activity
+568-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:16:9-19:75
+569            android:name="com.onesignal.core.activities.PermissionsActivity"
+569-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:17:13-77
+570            android:exported="false"
+570-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:18:13-37
+571            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+571-->[com.onesignal:core:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/3efb00cf84c94a1f48a4a3b55ad3b9dd/transformed/jetified-core-5.1.38/AndroidManifest.xml:19:13-72
+572
+573        <service
+573-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+574            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+574-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+575            android:enabled="true"
+575-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+576            android:exported="false" >
+576-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+577            <meta-data
+577-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+578                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+578-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+579                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+579-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+580        </service>
+581
+582        <activity
+582-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+583            android:name="androidx.credentials.playservices.HiddenActivity"
+583-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+584            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+584-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+585            android:enabled="true"
+585-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+586            android:exported="false"
+586-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+587            android:fitsSystemWindows="true"
+587-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+588            android:theme="@style/Theme.Hidden" >
+588-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/7da4d133f1764ba22bf75cbb88b64907/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+589        </activity>
+590        <activity
+590-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:23:9-27:75
+591            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+591-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:24:13-93
+592            android:excludeFromRecents="true"
+592-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:25:13-46
+593            android:exported="false"
+593-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:26:13-37
+594            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+594-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:27:13-72
+595        <!--
+596            Service handling Google Sign-In user revocation. For apps that do not integrate with
+597            Google Sign-In, this service will never be started.
+598        -->
+599        <service
+599-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:33:9-37:51
+600            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+600-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:34:13-89
+601            android:exported="true"
+601-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:35:13-36
+602            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+602-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:36:13-107
+603            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+603-->[com.google.android.gms:play-services-auth:21.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/59f5205b14c4fb37928e035f8c0fcc04/transformed/jetified-play-services-auth-21.4.0/AndroidManifest.xml:37:13-48
+604        <uses-library
+604-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
+605            android:name="org.apache.http.legacy"
+605-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
+606            android:required="false" />
+606-->[com.google.android.gms:play-services-maps:19.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9fe2cda3a6861f095912a34656279a87/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
+607
+608        <activity
+608-->[com.google.android.gms:play-services-base:18.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9b2728df5349fa13300d3c346d5ce186/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+609            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+609-->[com.google.android.gms:play-services-base:18.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9b2728df5349fa13300d3c346d5ce186/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+610            android:exported="false"
+610-->[com.google.android.gms:play-services-base:18.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9b2728df5349fa13300d3c346d5ce186/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+611            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+611-->[com.google.android.gms:play-services-base:18.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/9b2728df5349fa13300d3c346d5ce186/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+612
+613        <provider
+613-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:29:9-37:20
+614            android:name="androidx.startup.InitializationProvider"
+614-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:30:13-67
+615            android:authorities="com.w3cart.androidx-startup"
+615-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:31:13-68
+616            android:exported="false" >
+616-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:32:13-37
+617            <meta-data
+617-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
+618                android:name="androidx.work.WorkManagerInitializer"
+618-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
+619                android:value="androidx.startup" />
+619-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
+620            <meta-data
+620-->[androidx.emoji2:emoji2:1.3.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0e644252889b95c06db52ba42a8332e1/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+621                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+621-->[androidx.emoji2:emoji2:1.3.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0e644252889b95c06db52ba42a8332e1/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+622                android:value="androidx.startup" />
+622-->[androidx.emoji2:emoji2:1.3.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/0e644252889b95c06db52ba42a8332e1/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+623            <meta-data
+623-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c8c62960aaeed871a019e6d2098a291b/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+624                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+624-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c8c62960aaeed871a019e6d2098a291b/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+625                android:value="androidx.startup" />
+625-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c8c62960aaeed871a019e6d2098a291b/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+626            <meta-data
+626-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+627                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+627-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+628                android:value="androidx.startup" />
+628-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+629        </provider>
+630
+631        <service
+631-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
+632            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+632-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
+633            android:directBootAware="false"
+633-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
+634            android:enabled="@bool/enable_system_alarm_service_default"
+634-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
+635            android:exported="false" />
+635-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
+636        <service
+636-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
+637            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+637-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
+638            android:directBootAware="false"
+638-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
+639            android:enabled="@bool/enable_system_job_service_default"
+639-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
+640            android:exported="true"
+640-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
+641            android:permission="android.permission.BIND_JOB_SERVICE" />
+641-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+642        <service
+642-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
+643            android:name="androidx.work.impl.foreground.SystemForegroundService"
+643-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
+644            android:directBootAware="false"
+644-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
+645            android:enabled="@bool/enable_system_foreground_service_default"
+645-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
+646            android:exported="false" />
+646-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
+647
+648        <receiver
+648-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
+649            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+649-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
+650            android:directBootAware="false"
+650-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
+651            android:enabled="true"
+651-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
+652            android:exported="false" />
+652-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
+653        <receiver
+653-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
+654            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+654-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
+655            android:directBootAware="false"
+655-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
+656            android:enabled="false"
+656-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
+657            android:exported="false" >
+657-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
+658            <intent-filter>
+658-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
+659                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+659-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
+659-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
+660                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+660-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
+660-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
+661            </intent-filter>
+662        </receiver>
+663        <receiver
+663-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
+664            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+664-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
+665            android:directBootAware="false"
+665-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
+666            android:enabled="false"
+666-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
+667            android:exported="false" >
+667-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
+668            <intent-filter>
+668-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
+669                <action android:name="android.intent.action.BATTERY_OKAY" />
+669-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
+669-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
+670                <action android:name="android.intent.action.BATTERY_LOW" />
+670-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
+670-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
+671            </intent-filter>
+672        </receiver>
+673        <receiver
+673-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
+674            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+674-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
+675            android:directBootAware="false"
+675-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
+676            android:enabled="false"
+676-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+677            android:exported="false" >
+677-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
+678            <intent-filter>
+678-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
+679                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+679-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
+679-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
+680                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+680-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
+680-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
+681            </intent-filter>
+682        </receiver>
+683        <receiver
+683-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
+684            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+684-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
+685            android:directBootAware="false"
+685-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
+686            android:enabled="false"
+686-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
+687            android:exported="false" >
+687-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
+688            <intent-filter>
+688-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
+689                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+689-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
+689-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
+690            </intent-filter>
+691        </receiver>
+692        <receiver
+692-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
+693            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+693-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
+694            android:directBootAware="false"
+694-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
+695            android:enabled="false"
+695-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
+696            android:exported="false" >
+696-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
+697            <intent-filter>
+697-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
+698                <action android:name="android.intent.action.BOOT_COMPLETED" />
+698-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:84:17-79
+698-->[com.onesignal:notifications:5.1.38] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/53f5b7cc09c86db0b6a4dfdfcf418997/transformed/jetified-notifications-5.1.38/AndroidManifest.xml:84:25-76
+699                <action android:name="android.intent.action.TIME_SET" />
+699-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
+699-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
+700                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+700-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
+700-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
+701            </intent-filter>
+702        </receiver>
+703        <receiver
+703-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
+704            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+704-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
+705            android:directBootAware="false"
+705-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
+706            android:enabled="@bool/enable_system_alarm_service_default"
+706-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
+707            android:exported="false" >
+707-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
+708            <intent-filter>
+708-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
+709                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+709-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
+709-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
+710            </intent-filter>
+711        </receiver>
+712        <receiver
+712-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
+713            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+713-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
+714            android:directBootAware="false"
+714-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
+715            android:enabled="true"
+715-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
+716            android:exported="true"
+716-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
+717            android:permission="android.permission.DUMP" >
+717-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
+718            <intent-filter>
+718-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
+719                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+719-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
+719-->[androidx.work:work-runtime:2.9.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c4fc85016701e898fc1ce0a8b3f83d96/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
+720            </intent-filter>
+721        </receiver>
+722
+723        <service
+723-->[androidx.room:room-runtime:2.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/599d48663957ddb867a3edb1c96c67c2/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+724            android:name="androidx.room.MultiInstanceInvalidationService"
+724-->[androidx.room:room-runtime:2.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/599d48663957ddb867a3edb1c96c67c2/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+725            android:directBootAware="true"
+725-->[androidx.room:room-runtime:2.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/599d48663957ddb867a3edb1c96c67c2/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+726            android:exported="false" />
+726-->[androidx.room:room-runtime:2.5.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/599d48663957ddb867a3edb1c96c67c2/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+727
+728        <receiver
+728-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+729            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+729-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+730            android:directBootAware="false"
+730-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+731            android:enabled="true"
+731-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+732            android:exported="true"
+732-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+733            android:permission="android.permission.DUMP" >
+733-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+734            <intent-filter>
+734-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+735                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+735-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+735-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+736            </intent-filter>
+737            <intent-filter>
+737-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+738                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+738-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+738-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+739            </intent-filter>
+740            <intent-filter>
+740-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+741                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+741-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+741-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+742            </intent-filter>
+743            <intent-filter>
+743-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+744                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+744-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+744-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/badcdbfaa903e20a39406f89f6218830/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+745            </intent-filter>
+746        </receiver>
+747
+748        <service
+748-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+749            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+749-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+750            android:exported="false" >
+750-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+751            <meta-data
+751-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+752                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+752-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+753                android:value="cct" />
+753-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/b4ebb8928957e89999310300916e0dbb/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+754        </service>
+755        <service
+755-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+756            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+756-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+757            android:exported="false"
+757-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+758            android:permission="android.permission.BIND_JOB_SERVICE" >
+758-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+759        </service>
+760
+761        <receiver
+761-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+762            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+762-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+763            android:exported="false" />
+763-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/040af2b9119d3a9dea5463313942338c/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+764
+765        <meta-data
+765-->[com.facebook.soloader:soloader:0.12.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/f3805505f21ea30f0420ee69825e4c02/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:12:9-14:37
+766            android:name="com.facebook.soloader.enabled"
+766-->[com.facebook.soloader:soloader:0.12.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/f3805505f21ea30f0420ee69825e4c02/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:13:13-57
+767            android:value="false" />
+767-->[com.facebook.soloader:soloader:0.12.1] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/f3805505f21ea30f0420ee69825e4c02/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:14:13-34
+768        <meta-data
+768-->[com.google.android.instantapps:instantapps:1.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/88bceafa01d650fbe72b6680448ea9dc/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:10:9-12:33
+769            android:name="aia-compat-api-min-version"
+769-->[com.google.android.instantapps:instantapps:1.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/88bceafa01d650fbe72b6680448ea9dc/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:11:13-54
+770            android:value="1" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+770-->[com.google.android.instantapps:instantapps:1.1.0] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/88bceafa01d650fbe72b6680448ea9dc/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:12:13-30
+771        <activity
+771-->[com.google.android.play:core-common:2.0.4] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c695c2efb7d92d6b8608b140b03e7ecd/transformed/jetified-core-common-2.0.4/AndroidManifest.xml:14:9-18:65
+772            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+772-->[com.google.android.play:core-common:2.0.4] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c695c2efb7d92d6b8608b140b03e7ecd/transformed/jetified-core-common-2.0.4/AndroidManifest.xml:15:13-93
+773            android:exported="false"
+773-->[com.google.android.play:core-common:2.0.4] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c695c2efb7d92d6b8608b140b03e7ecd/transformed/jetified-core-common-2.0.4/AndroidManifest.xml:16:13-37
+774            android:stateNotNeeded="true"
+774-->[com.google.android.play:core-common:2.0.4] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c695c2efb7d92d6b8608b140b03e7ecd/transformed/jetified-core-common-2.0.4/AndroidManifest.xml:17:13-42
+775            android:theme="@style/Theme.PlayCore.Transparent" />
+775-->[com.google.android.play:core-common:2.0.4] /Users/vervebotapps/.gradle/caches/8.14.1/transforms/c695c2efb7d92d6b8608b140b03e7ecd/transformed/jetified-core-common-2.0.4/AndroidManifest.xml:18:13-62
+776    </application>
+777
+778</manifest>
